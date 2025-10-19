@@ -6,6 +6,11 @@
 
 **FB AIO Crack** là phiên bản mở khoá VIP miễn phí của FB AIO Extension, giúp bạn tận hưởng trải nghiệm VIP hoàn toàn miễn phí! Tất cả tính năng premium được mở khóa vĩnh viễn, không cần mua hay đăng ký.
 
+## 🌟 Stars to Unlock
+Dự án đang trong giai đoạn Coming Soon.  
+
+❌ 50 Stars | Instant Release | ![Road to 50 Stars](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Frepos%2Ffiretofficial%2Ffb-aio-crack&query=%24.stargazers_count&suffix=%2F50&label=Road%20to&color=orange&style=flat-square)  
+
 ## 🚀 Tính năng
 
 ### ✨ **VIP Features Unlocked**
