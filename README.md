@@ -5,6 +5,7 @@
 ![License](https://img.shields.io/badge/License-Educational-orange?style=flat-square)
 
 **FB AIO Crack** là phiên bản mở khoá VIP miễn phí của FB AIO Extension, giúp bạn tận hưởng trải nghiệm VIP hoàn toàn miễn phí! Tất cả tính năng premium được mở khóa vĩnh viễn, không cần mua hay đăng ký.
+<img width="1596" height="868" alt="image" src="https://github.com/user-attachments/assets/ed06cea2-fde6-41dd-8980-34fc9559c286" />
 
 ## 🌟 Stars to Unlock
 
