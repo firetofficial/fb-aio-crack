@@ -1,0 +1,115 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    color: #333;
+}
+body {
+    background-color: #e6e6e6;
+    color: #333;
+    min-width: 370px;
+    max-width: 450px;
+    margin: auto;
+    position: relative;
+}
+h1 {
+    text-align: center;
+}
+.header {
+    font-size: 35px;
+    font-weight: bold;
+    color: #333;
+    letter-spacing: 3px;
+    text-align: center;
+    background: #121fcf;
+    background: linear-gradient(to right, #121fcf 0%, #cf1512 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#root {
+    padding: 10px;
+}
+#btn-lang {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background-color: transparent;
+    color: #333;
+    transition: all 0.1s;
+}
+#btn-lang:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+.script-btn {
+    position: relative;
+    border: none;
+    margin-bottom: 5px;
+    padding: 0.75em 1em;
+    background-color: #c6c6c6;
+    transition: all 200ms;
+    width: 100%;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+
+    opacity: 0;
+}
+.script-btn,
+.separator {
+    animation-name: fadeInAnimation;
+    animation-duration: 0.25s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+.script-btn:hover {
+    background-color: #a2a2a2;
+    cursor: pointer;
+    z-index: 3;
+    transform: scale(1.05);
+}
+.script-btn:active {
+    transition: all 0.1s;
+    transform: scale(0.95);
+}
+@keyframes fadeInAnimation {
+    0% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+.script-btn .icon {
+    margin-right: 0.5em;
+    width: 1.5em;
+}
+hr {
+    border: none;
+    height: 1px;
+    background-color: #333 4;
+    margin: 1em 0;
+}
+.separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 1em 0 0.5em;
+    font-size: 1.2em;
+    opacity: 0;
+}
+.separator::before,
+.separator::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #333 4;
+}
+.separator:not(:empty)::before {
+    margin-right: 0.5em;
+}
+.separator:not(:empty)::after {
+    margin-left: 0.5em;
+}

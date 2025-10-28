@@ -1,0 +1,53 @@
+{
+   "action": {
+      "default_icon": "./assets/icon32.png",
+      "default_popup": "./scripts/popup/index.html"
+   },
+   "background": {
+      "service_worker": "./scripts/background/index.js",
+      "type": "module"
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "js": [ "./scripts/content/content.js" ],
+      "matches": [ "*://*/*" ],
+      "run_at": "document_start"
+   }, {
+      "all_frames": true,
+      "js": [ "./scripts/content/listener.js" ],
+      "matches": [ "*://*/*" ],
+      "run_at": "document_start",
+      "world": "MAIN"
+   } ],
+   "declarative_net_request": {
+      "rule_resources": [ {
+         "enabled": true,
+         "id": "ruleset_fb_aio",
+         "path": "./rules.json"
+      } ]
+   },
+   "default_locale": "en",
+   "description": "__MSG_extDescription__",
+   "externally_connectable": {
+      "matches": [ "https://useful-scripts-extension.github.io/*", "https://facebook-all-in-one.com/*", "https://fb-aio.github.io/*", "https://fb-aio.web.app/*", "https://fb-aio.firebaseapp.com/*", "https://fb-aio.xyz/*", "http://localhost:5173/*", "http://aio.firet.io/*", "http://localhost/*", "https://aio.firet.io/*", "http://localhost:8080/*", "http://127.0.0.1:8080/*", "http://xampp.htdocs/*" ]
+   },
+   "homepage_url": "https://chromewebstore.google.com/detail/ncncagnhhigemlgiflfgdhcdpipadmmm",
+   "host_permissions": [ "*://*/*", "\u003Call_urls>" ],
+   "icons": {
+      "128": "assets/icon128.png",
+      "16": "assets/icon16.png",
+      "32": "assets/icon32.png",
+      "48": "assets/icon32.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA98seI5niL9GqYDQBspse//uvx2eZC4BZNaXoGjZzGw8KgHwIVw7sT1hEvt3WzyumTDVNcuN98+v92wlk54hizY2we1Ur/KJTxbqTlTlFCDsdb6c3fAVdeYYyT0OfcH4kcZvkC9K5ZsoYvWBUA3hNiCix8zJ5pEJw4hXMqJ7EtCm4jjGgEr5ifQyXe/4UaZGL/paK4HMjjzaw5ZNF9z+BuatDyIHTJ3vqEpdE/B+Y2+Yg/pwLSHi7+4c1Z/qjS13m1VKMlbSUP20dL5deO+i2wqdDt7JwsztCgYyB/deZcKN5XTZf14irkFGxBHm+trohQfsPrSy2bKty1FA4omTwvQIDAQAB",
+   "manifest_version": 3,
+   "name": "FB AIO",
+   "optional_permissions": [ "tabs" ],
+   "permissions": [ "idle", "storage", "cookies", "activeTab", "scripting", "declarativeNetRequest", "declarativeNetRequestFeedback", "declarativeNetRequestWithHostAccess" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.93",
+   "web_accessible_resources": [ {
+      "matches": [ "\u003Call_urls>" ],
+      "resources": [ "scripts/*" ]
+   } ]
+}

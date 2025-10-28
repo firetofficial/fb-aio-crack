@@ -1,0 +1,151 @@
+@keyframes tooltip-vert {
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+@keyframes tooltip-horz {
+  to {
+    opacity: 1;
+    transform: translate(0, -50%);
+  }
+}
+[data-tooltip] {
+  position: relative;
+  cursor: pointer;
+  --animation-duration: 0.3s;
+}
+[data-tooltip]::before {
+  text-transform: none;
+  font-size: 0.9em;
+  line-height: 1;
+  position: absolute;
+  display: none;
+  opacity: 0;
+  content: "";
+  border: 6px solid transparent;
+  z-index: 101;
+}
+[data-tooltip]::after {
+  text-transform: none;
+  font-size: 0.9em;
+  line-height: 1;
+  position: absolute;
+  display: none;
+  opacity: 0;
+  content: attr(data-tooltip);
+  text-align: center;
+  min-width: 3em;
+  max-width: 21em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 6px 8px;
+  border-radius: 3px;
+  background: #333333;
+  color: #ffffff;
+  z-index: 100;
+  pointer-events: none;
+}
+[data-tooltip]:hover::before {
+  display: block;
+}
+[data-tooltip]:hover::after {
+  display: block;
+}
+[data-tooltip]:not([data-flow])::before {
+  bottom: 100%;
+  border-bottom-width: 0;
+  border-top-color: #333333;
+  left: 50%;
+  transform: translate(-50%, -0.4em);
+}
+[data-tooltip]:not([data-flow])::after {
+  bottom: calc(105%);
+  left: 50%;
+  transform: translate(-50%, -0.4em);
+}
+[data-tooltip]:not([data-flow]):hover::before {
+  animation: tooltip-vert var(--animation-duration) ease-out forwards;
+}
+[data-tooltip]:not([data-flow]):hover::after {
+  animation: tooltip-vert var(--animation-duration) ease-out forwards;
+}
+[data-tooltip=""]::before {
+  display: none !important;
+}
+[data-tooltip=""]::after {
+  display: none !important;
+}
+[data-tooltip][data-flow^="top"]::before {
+  bottom: 100%;
+  border-bottom-width: 0;
+  border-top-color: #333333;
+  left: 50%;
+  transform: translate(-50%, -0.4em);
+}
+[data-tooltip][data-flow^="top"]::after {
+  bottom: calc(105%);
+  left: 50%;
+  transform: translate(-50%, -0.4em);
+}
+[data-tooltip][data-flow^="top"]:hover::before {
+  animation: tooltip-vert var(--animation-duration) ease-out forwards;
+}
+[data-tooltip][data-flow^="top"]:hover::after {
+  animation: tooltip-vert var(--animation-duration) ease-out forwards;
+}
+[data-tooltip][data-flow^="bottom"]::before {
+  top: 100%;
+  border-top-width: 0;
+  border-bottom-color: #333333;
+  left: 50%;
+  transform: translate(-50%, 0.4em);
+}
+[data-tooltip][data-flow^="bottom"]::after {
+  top: calc(105%);
+  left: 50%;
+  transform: translate(-50%, 0.4em);
+}
+[data-tooltip][data-flow^="bottom"]:hover::before {
+  animation: tooltip-vert var(--animation-duration) ease-out forwards;
+}
+[data-tooltip][data-flow^="bottom"]:hover::after {
+  animation: tooltip-vert var(--animation-duration) ease-out forwards;
+}
+[data-tooltip][data-flow^="left"]::before {
+  top: 50%;
+  border-right-width: 0;
+  border-left-color: #333333;
+  left: calc(-5em);
+  transform: translate(-0.5em, -50%);
+}
+[data-tooltip][data-flow^="left"]::after {
+  top: 50%;
+  right: calc(105%);
+  transform: translate(-0.4em, -50%);
+}
+[data-tooltip][data-flow^="left"]:hover::before {
+  animation: tooltip-horz var(--animation-duration) ease-out forwards;
+}
+[data-tooltip][data-flow^="left"]:hover::after {
+  animation: tooltip-horz var(--animation-duration) ease-out forwards;
+}
+[data-tooltip][data-flow^="right"]::before {
+  top: 50%;
+  border-left-width: 0;
+  border-right-color: #333333;
+  right: calc(-7em);
+  transform: translate(0.4em, -50%);
+}
+[data-tooltip][data-flow^="right"]::after {
+  top: 50%;
+  left: calc(105%);
+  transform: translate(0.5em, -50%);
+}
+[data-tooltip][data-flow^="right"]:hover::before {
+  animation: tooltip-horz var(--animation-duration) ease-out forwards;
+}
+[data-tooltip][data-flow^="right"]:hover::after {
+  animation: tooltip-horz var(--animation-duration) ease-out forwards;
+}
