@@ -57,7 +57,7 @@
 
 ## 🎬 Video hướng dẫn
 
-[![Video hướng dẫn](https://img.shields.io/badge/Video-Hướng%20dẫn-red?style=for-the-badge)](https://t.me/ft_bypassgroup)
+[![Video hướng dẫn](https://img.shields.io/badge/Video-Hướng%20dẫn-red?style=for-the-badge)](https://youtu.be/4AHfbk5VY2w?si=nQIHJoTpGWSBA-gK)
 
 
 ## 🔧 Troubleshooting
