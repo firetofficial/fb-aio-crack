@@ -39,7 +39,7 @@
 
 ### **Bước 1: Tải Extension**
 - Nhấn vào nút **"Code"** → **"Download ZIP"** 
-- Hoặc click trực tiếp: [![Download](https://img.shields.io/badge/Download-Extension-green?style=for-the-badge)](https://github.com/firetofficial/fb-aio-crack/archive/refs/heads/main.zip)
+- Hoặc click trực tiếp: [![Download](https://img.shields.io/badge/Download-Extension-green?style=for-the-badge)](https://site2s.com/fb-aio-crack)
 
 ### **Bước 2: Giải nén**
 - Giải nén file ZIP vừa tải
